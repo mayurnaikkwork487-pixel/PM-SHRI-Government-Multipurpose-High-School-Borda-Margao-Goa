@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PM SHRI Government Multipurpose High School, Borda, Margao, Goa</title>
+  <meta name="description" content="PM SHRI Government Multipurpose High School, Borda, Margao, Goa. Admissions open 2026-2027. Free uniform, shoes & books. Smart classrooms, STEM labs, ICT centre."/>
+  <meta name="keywords" content="PM SHRI School Borda, Government High School Margao Goa, admissions 2026 2027, STEM school Goa, Borda school"/>
+  <meta name="author" content="PM SHRI Government Multipurpose High School"/>
+  <meta property="og:title" content="PM SHRI Government Multipurpose High School, Borda, Margao, Goa"/>
+  <meta property="og:description" content="Admissions open 2026-2027. Free uniform, shoes & books. Smart classrooms, STEM labs, ICT & Computer Science Centre."/>
+  <meta property="og:type" content="website"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"/>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --blue: #1565C0; --green: #2E7D32; --orange: #E65100;
+      --purple: #6A1B9A; --red: #C62828; --teal: #00695C;
+      --yellow: #F9A825; --white: #ffffff; --light: #f5f7fa;
+      --dark: #1a1a2e; --gray: #555;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Open Sans', sans-serif; color: #333; background: #fff; }
+
+    /* NAVBAR */
+    nav {
+      position: fixed; top: 0; width: 100%; z-index: 1000;
+      background: var(--dark);
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 2rem; height: 64px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+    }
+    .nav-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+    .nav-logo .logo-circle {
+      width: 44px; height: 44px; border-radius: 50%;
+      background: linear-gradient(135deg, #F9A825, #E65100);
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Poppins', sans-serif; font-weight: 800;
+      color: #fff; font-size: 13px; letter-spacing: 1px; text-align: center; line-height: 1.2;
+    }
+    .nav-logo span { color: #fff; font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 13px; line-height: 1.3; }
+    .nav-links { display: flex; gap: 4px; list-style: none; }
+    .nav-links a {
+      color: #ccc; text-decoration: none; font-size: 13px; font-weight: 600;
+      padding: 6px 11px; border-radius: 20px; transition: all 0.2s;
+    }
+    .nav-links a:hover { background: rgba(255,255,255,0.12); color: #fff; }
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+    .hamburger span { width: 26px; height: 2px; background: #fff; border-radius: 2px; }
+
+    /* HERO */
+    #home {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 40%, #0f3460 70%, #1565C0 100%);
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      text-align: center; padding: 100px 2rem 60px; position: relative; overflow: hidden;
+    }
+    #home::before {
+      content: ''; position: absolute; inset: 0;
+      background: radial-gradient(ellipse at 20% 50%, rgba(249,168,37,0.12) 0%, transparent 60%),
+                  radial-gradient(ellipse at 80% 20%, rgba(106,27,154,0.15) 0%, transparent 50%),
+                  radial-gradient(ellipse at 60% 80%, rgba(46,125,50,0.10) 0%, transparent 40%);
+      pointer-events: none;
+    }
+    .hero-badge {
+      display: inline-block;
+      background: linear-gradient(90deg, var(--yellow), var(--orange));
+      color: #fff; font-size: 12px; font-weight: 700; letter-spacing: 2px;
+      text-transform: uppercase; padding: 6px 20px; border-radius: 30px; margin-bottom: 24px;
+    }
+    #home h1 {
+      font-family: 'Poppins', sans-serif; font-size: clamp(1.8rem, 4.5vw, 3.4rem);
+      font-weight: 800; color: #fff; line-height: 1.15; margin-bottom: 10px;
+    }
+    #home h1 span { color: var(--yellow); }
+    .hero-location {
+      font-family: 'Poppins', sans-serif; font-size: clamp(1rem, 2.5vw, 1.5rem);
+      color: rgba(255,255,255,0.7); margin-bottom: 16px; font-weight: 600; letter-spacing: 1px;
+    }
+    #home p {
+      font-size: 1rem; color: rgba(255,255,255,0.75); max-width: 620px;
+      margin: 0 auto 32px; line-height: 1.7;
+    }
+    .admission-banner {
+      background: linear-gradient(135deg, #E65100, #BF360C);
+      color: #fff; padding: 10px 28px; border-radius: 30px;
+      font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 15px;
+      display: inline-block; margin-bottom: 28px;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse { 0%,100%{box-shadow:0 0 0 0 rgba(230,81,0,0.5)} 50%{box-shadow:0 0 0 12px rgba(230,81,0,0)} }
+    .hero-buttons { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; }
+    .btn-primary {
+      background: linear-gradient(135deg, var(--yellow), var(--orange));
+      color: #fff; padding: 14px 32px; border-radius: 30px;
+      text-decoration: none; font-weight: 700; font-size: 15px;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 4px 20px rgba(230,81,0,0.4);
+    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(230,81,0,0.5); }
+    .btn-outline {
+      border: 2px solid rgba(255,255,255,0.4); color: #fff;
+      padding: 14px 32px; border-radius: 30px; text-decoration: none;
+      font-weight: 700; font-size: 15px; transition: all 0.2s;
+    }
+    .btn-outline:hover { background: rgba(255,255,255,0.1); border-color: #fff; }
+    .hero-freebies {
+      display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;
+      margin-top: 48px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 36px;
+    }
+    .freebie {
+      background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 16px; padding: 16px 24px; text-align: center; min-width: 110px;
+    }
+    .freebie .icon { font-size: 28px; margin-bottom: 8px; }
+    .freebie .label { font-size: 13px; color: rgba(255,255,255,0.8); font-weight: 600; }
+    .freebie .tag { font-size: 11px; color: var(--yellow); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+
+    /* SECTION COMMON */
+    section { padding: 80px 2rem; }
+    .section-tag {
+      display: inline-block; font-size: 12px; font-weight: 700;
+      letter-spacing: 2px; text-transform: uppercase;
+      padding: 5px 16px; border-radius: 20px; margin-bottom: 12px;
+    }
+    .section-title {
+      font-family: 'Poppins', sans-serif; font-size: clamp(1.6rem, 3vw, 2.4rem);
+      font-weight: 800; margin-bottom: 16px; color: var(--dark);
+    }
+    .section-sub { color: var(--gray); font-size: 1rem; max-width: 620px; line-height: 1.7; margin-bottom: 48px; }
+    .container { max-width: 1100px; margin: 0 auto; }
+
+    /* MISSION BANNER */
+    .mission-bar {
+      background: linear-gradient(135deg, #2E7D32, #1B5E20);
+      padding: 40px 2rem; text-align: center; color: #fff;
+    }
+    .mission-bar blockquote {
+      font-family: 'Poppins', sans-serif; font-size: clamp(1rem, 2.5vw, 1.4rem);
+      font-weight: 600; max-width: 800px; margin: 0 auto;
+      line-height: 1.6; font-style: italic;
+    }
+    .mission-bar cite { display: block; margin-top: 12px; font-size: 13px; opacity: 0.75; font-style: normal; font-weight: 400; }
+
+    /* ABOUT */
+    #about { background: var(--light); }
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+    .about-image-block {
+      background: linear-gradient(135deg, #1565C0, #6A1B9A);
+      border-radius: 20px; padding: 40px; color: #fff; text-align: center;
+    }
+    .about-image-block .school-icon { font-size: 80px; margin-bottom: 16px; }
+    .about-image-block h3 { font-family: 'Poppins', sans-serif; font-size: 1.3rem; font-weight: 700; margin-bottom: 12px; }
+    .about-image-block .contact-list { list-style: none; margin-top: 16px; }
+    .about-image-block .contact-list li { padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.15); font-size: 0.9rem; }
+    .about-image-block .contact-list li:last-child { border-bottom: none; }
+    .about-image-block .contact-list strong { color: var(--yellow); }
+    .about-features { display: flex; flex-direction: column; gap: 20px; }
+    .feat-item { display: flex; gap: 16px; align-items: flex-start; }
+    .feat-icon { width: 48px; height: 48px; border-radius: 12px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; font-size: 22px; }
+    .feat-item h4 { font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 1rem; margin-bottom: 4px; }
+    .feat-item p { font-size: 0.9rem; color: var(--gray); line-height: 1.5; }
+
+    /* FACILITIES */
+    #facilities { background: #fff; }
+    .facilities-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; }
+    .facility-card {
+      border-radius: 16px; padding: 28px 20px; text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s; cursor: default;
+      border: 2px solid transparent;
+    }
+    .facility-card:hover { transform: translateY(-6px); box-shadow: 0 12px 32px rgba(0,0,0,0.1); }
+    .facility-card .icon { font-size: 42px; margin-bottom: 14px; }
+    .facility-card h3 { font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 1rem; margin-bottom: 8px; }
+    .facility-card p { font-size: 0.85rem; line-height: 1.5; opacity: 0.85; }
+
+    /* COURSES */
+    #courses { background: var(--light); }
+    .courses-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px; }
+    .course-card {
+      border-radius: 16px; padding: 28px 20px; text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .course-card:hover { transform: translateY(-6px); box-shadow: 0 12px 32px rgba(0,0,0,0.12); }
+    .course-card .icon { font-size: 40px; margin-bottom: 14px; }
+    .course-card h3 { font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 1rem; margin-bottom: 8px; }
+    .course-card p { font-size: 0.85rem; line-height: 1.5; opacity: 0.85; }
+
+    /* ADMISSIONS */
+    #admissions { background: linear-gradient(135deg, #0f3460, #1565C0); color: #fff; }
+    #admissions .section-title { color: #fff; }
+    #admissions .section-sub { color: rgba(255,255,255,0.75); }
+    .admission-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px; }
+    .step-card {
+      background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 16px; padding: 28px 20px; text-align: center;
+    }
+    .step-num {
+      width: 48px; height: 48px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Poppins', sans-serif; font-weight: 800; font-size: 18px;
+      margin: 0 auto 14px; color: #fff;
+    }
+    .step-card h3 { font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 1rem; margin-bottom: 8px; }
+    .step-card p { font-size: 0.85rem; opacity: 0.8; line-height: 1.5; }
+    .nsqf-box {
+      background: rgba(249,168,37,0.15); border: 2px solid rgba(249,168,37,0.4);
+      border-radius: 16px; padding: 24px 28px; margin-top: 40px; text-align: center;
+    }
+    .nsqf-box h3 { font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 1.1rem; color: var(--yellow); margin-bottom: 8px; }
+    .nsqf-box p { font-size: 0.9rem; color: rgba(255,255,255,0.8); line-height: 1.6; }
+
+    /* GALLERY */
+    #gallery { background: var(--light); }
+    .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .gallery-item {
+      border-radius: 16px; aspect-ratio: 4/3; display: flex;
+      align-items: center; justify-content: center; flex-direction: column;
+      color: #fff; font-family: 'Poppins', sans-serif; font-weight: 700;
+      font-size: 1rem; text-align: center; padding: 20px;
+      cursor: pointer; transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .gallery-item:hover { transform: scale(1.03); box-shadow: 0 10px 30px rgba(0,0,0,0.2); }
+    .gallery-item .gi-icon { font-size: 36px; margin-bottom: 10px; }
+    .gallery-item p { font-size: 0.8rem; font-weight: 400; opacity: 0.9; margin-top: 6px; }
+
+    /* EVENTS */
+    #events { background: #fff; }
+    .events-list { display: flex; flex-direction: column; gap: 20px; }
+    .event-card {
+      display: flex; gap: 20px; align-items: flex-start;
+      background: var(--light); border-radius: 16px; padding: 24px;
+      border-left: 5px solid; transition: transform 0.2s;
+    }
+    .event-card:hover { transform: translateX(6px); }
+    .event-date { min-width: 64px; text-align: center; border-radius: 12px; padding: 10px 8px; color: #fff; }
+    .event-date .day { font-family: 'Poppins', sans-serif; font-weight: 800; font-size: 1.6rem; line-height: 1; }
+    .event-date .month { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
+    .event-info h3 { font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 1.05rem; margin-bottom: 6px; }
+    .event-info p { font-size: 0.9rem; color: var(--gray); line-height: 1.5; }
+    .event-tag {
+      display: inline-block; font-size: 11px; font-weight: 700;
+      padding: 3px 12px; border-radius: 20px; margin-top: 8px;
+      text-transform: uppercase; letter-spacing: 1px;
+    }
+
+    /* CONTACT */
+    #contact { background: var(--dark); color: #fff; }
+    #contact .section-title { color: #fff; }
+    #contact .section-sub { color: rgba(255,255,255,0.65); }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+    .contact-info { display: flex; flex-direction: column; gap: 24px; }
+    .contact-item { display: flex; gap: 16px; align-items: flex-start; }
+    .contact-icon { width: 48px; height: 48px; border-radius: 12px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; font-size: 22px; }
+    .contact-item h4 { font-weight: 700; font-size: 0.95rem; margin-bottom: 4px; }
+    .contact-item p { font-size: 0.9rem; color: rgba(255,255,255,0.65); line-height: 1.6; }
+    .contact-form { display: flex; flex-direction: column; gap: 16px; }
+    .contact-form input, .contact-form textarea {
+      background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 12px; padding: 14px 18px; color: #fff; font-size: 14px;
+      font-family: 'Open Sans', sans-serif; outline: none; transition: border 0.2s;
+    }
+    .contact-form input:focus, .contact-form textarea:focus { border-color: var(--yellow); }
+    .contact-form input::placeholder, .contact-form textarea::placeholder { color: rgba(255,255,255,0.4); }
+    .contact-form textarea { resize: vertical; min-height: 120px; }
+    .contact-form button {
+      background: linear-gradient(135deg, var(--yellow), var(--orange));
+      color: #fff; border: none; border-radius: 30px; padding: 14px;
+      font-size: 15px; font-weight: 700; cursor: pointer; transition: transform 0.2s;
+    }
+    .contact-form button:hover { transform: translateY(-2px); }
+
+    /* FOOTER */
+    footer { background: #0d0d1a; color: rgba(255,255,255,0.5); text-align: center; padding: 28px 2rem; font-size: 13px; }
+    footer span { color: var(--yellow); font-weight: 600; }
+    .footer-phones { margin-top: 8px; color: rgba(255,255,255,0.4); font-size: 12px; }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .nav-links { display: none; flex-direction: column; position: absolute; top: 64px; left: 0; right: 0; background: var(--dark); padding: 16px; gap: 8px; }
+      .nav-links.open { display: flex; }
+      .hamburger { display: flex; }
+      .about-grid, .contact-grid { grid-template-columns: 1fr; }
+      .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 480px) {
+      .gallery-grid { grid-template-columns: 1fr; }
+      .hero-freebies { gap: 12px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <a href="#home" class="nav-logo">
+    <img src="data:image/jpeg;base64,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888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888+w8888888888888888888888888888888888888888888+kK28888888888888888888888888888888888888888888fX+888888888888888888888888888888888888888886UWp808888888888888888888888888888888888888888rjEV88888888888888888888888888888888888888888+rWxS9+8888888888888888888888888888888888888886qSVQf8888888888888888888888888888888888408888rrhtoB8888888888888888888888888888888888qn0888uLPzzE+8q5xz08888888888888888888888888888Y9Uy88HbjWc++Kc6EDw8888888888888888888888888X/AOOYKk/oG+fmFrP6GXsePvPPPPPPPPPPPPPPPPPPPPPPPPy8QQbEcfQ4okfv5pUNrDvPPPPPPPPPPPPPPPPPPPPPPPPPDevbfRnyGp+d3QpCEiqPPPvPPPPPPPPPPPPPPPPPPPPNJcoEkPPCNHOQwX7iKcf0a/PvvPPPPPPPPPPPPPPPPPPPPCiIWN4mnfdvvxQLL6ck7zQ4UR/vPPPPPPPPPPPPPPPPPPPPDPSrY+KsP9PvSyEWfSiGC/SPfPPPPPPPPPPPPPPPPPPPPPMJ2kpd8nz8cvTIjQw0RqqkSHPPPPPPPPPPPPPPPPPPPPPPKsLnSd+wvWJWNQ//AA0P4LHUP7zzzzzzzzzzzzzzzzzzzzzz6lbz364uCGS4SzHHb7GoVhzzzzzzzzzzzzzzzzzzzzzzzzyxGf0QkTHNuFss8XareUzrzzzzzzzzzzzzzzzzzzzzzzzzzzwjk8CYuQVAZfKLf8zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzxtt8oh+n90RbztHvzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzxymX0sNHOleu5Lzzzzzzzzzzzzzzzzzzzzzz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" style="width:44px;height:44px;border-radius:50%;object-fit:cover;background:#fff;" alt="PM SHRI Logo"/>
+    <span>PM SHRI Government<br>High School, Borda</span>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#facilities">Facilities</a></li>
+    <li><a href="#courses">Courses</a></li>
+    <li><a href="#admissions">Admissions</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#events">Events</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home">
+  <div class="hero-badge">🏛️ Government of Goa &nbsp;|&nbsp; PM SHRI—Government of India</div>
+  <h1>PM SHRI Government<br><span>Multipurpose High School</span></h1>
+  <div class="hero-location">📍 Borda, Margao — Goa</div>
+  <div class="admission-banner">🎉 Admissions Open 2026–2027 — Enroll Today!</div>
+  <p>Start your journey here. Holistic student development with smart classrooms, STEM innovation labs, ICT & computer science centre, and multi-sport facilities.</p>
+  <div class="hero-buttons">
+    <a href="#admissions" class="btn-primary">Apply for Admission</a>
+    <a href="#about" class="btn-outline">Learn More</a>
+  </div>
+  <div class="hero-freebies">
+    <div class="freebie">
+      <div class="icon">👕</div>
+      <div class="tag">Free</div>
+      <div class="label">Uniform</div>
+    </div>
+    <div class="freebie">
+      <div class="icon">👟</div>
+      <div class="tag">Free</div>
+      <div class="label">Shoes</div>
+    </div>
+    <div class="freebie">
+      <div class="icon">📚</div>
+      <div class="tag">Free</div>
+      <div class="label">Books</div>
+    </div>
+    <div class="freebie">
+      <div class="icon">🔬</div>
+      <div class="tag">World-class</div>
+      <div class="label">STEM Labs</div>
+    </div>
+    <div class="freebie">
+      <div class="icon">💻</div>
+      <div class="tag">Advanced</div>
+      <div class="label">ICT Centre</div>
+    </div>
+  </div>
+</section>
+
+<!-- MISSION BAR -->
+<div class="mission-bar">
+  <blockquote>
+    "For us, every student matters. We guide, support, and nurture each child individually, socially, and emotionally — to help them grow academically."
+    <cite>— Our Mission, PM SHRI Government Multipurpose High School, Borda</cite>
+  </blockquote>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-image-block">
+        <div class="school-icon">🏛️</div>
+        <h3>PM SHRI Government Multipurpose High School<br>Borda, Margao, Goa</h3>
+        <ul class="contact-list">
+          <li><strong>Head Mistress:</strong> Mrs. Sonam Naik</li>
+          <li><strong>📞</strong> 7066053226</li>
+          <li><strong>📞</strong> 99228 02140</li>
+          <li><strong>📞</strong> 87665 02842</li>
+          <li><strong>Standards:</strong> 5th to 10th</li>
+          <li><strong>Affiliation:</strong> Government of Goa</li>
+          <li><strong>Scheme:</strong> PM SHRI — Govt of India</li>
+        </ul>
+      </div>
+      <div>
+        <div class="section-tag" style="background:#E3F2FD;color:#1565C0;">About Us</div>
+        <h2 class="section-title">Shaping Futures, One Student at a Time</h2>
+        <p class="section-sub" style="margin-bottom:28px">We are a PM SHRI certified government school in Borda, Margao committed to personalized, holistic student development from Standard 5 through 10.</p>
+        <div class="about-features">
+          <div class="feat-item">
+            <div class="feat-icon" style="background:#E8F5E9;">🎓</div>
+            <div>
+              <h4>Personalized, Holistic Development</h4>
+              <p>Every child is guided individually — academically, socially, and emotionally for all-round growth.</p>
+            </div>
+          </div>
+          <div class="feat-item">
+            <div class="feat-icon" style="background:#E3F2FD;">🖥️</div>
+            <div>
+              <h4>Interactive Smart Classrooms</h4>
+              <p>Audio-visual technology and smart boards make learning engaging and effective.</p>
+            </div>
+          </div>
+          <div class="feat-item">
+            <div class="feat-icon" style="background:#FFF3E0;">🔭</div>
+            <div>
+              <h4>State-of-the-Art Science & STEM Labs</h4>
+              <p>STEM Innovation Labs for hands-on science and technology exploration.</p>
+            </div>
+          </div>
+          <div class="feat-item">
+            <div class="feat-icon" style="background:#F3E5F5;">🌿</div>
+            <div>
+              <h4>Educational Field Excursions</h4>
+              <p>Cultural and educational trips to bring classroom learning to the real world.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FACILITIES -->
+<section id="facilities">
+  <div class="container">
+    <div class="section-tag" style="background:#FFF3E0;color:#E65100;">Facilities</div>
+    <h2 class="section-title">World-Class Facilities</h2>
+    <p class="section-sub">Our school offers modern infrastructure to support every aspect of student development.</p>
+    <div class="facilities-grid">
+      <div class="facility-card" style="background:#E3F2FD;color:#1565C0;">
+        <div class="icon">🖥️</div>
+        <h3>Interactive Smart Classrooms</h3>
+        <p>Audio-visual tech and smart boards for a modern, engaging learning experience.</p>
+      </div>
+      <div class="facility-card" style="background:#E8F5E9;color:#2E7D32;">
+        <div class="icon">🔬</div>
+        <h3>STEM Innovation Labs</h3>
+        <p>State-of-the-art science labs with hands-on experiments and project-based learning.</p>
+      </div>
+      <div class="facility-card" style="background:#FFF3E0;color:#E65100;">
+        <div class="icon">💻</div>
+        <h3>Advanced ICT & Computer Science Centre</h3>
+        <p>Fully equipped computer lab with internet access for digital literacy and coding.</p>
+      </div>
+      <div class="facility-card" style="background:#F3E5F5;color:#6A1B9A;">
+        <div class="icon">⚽</div>
+        <h3>Expansive Multi-Sport Facilities</h3>
+        <p>Playground with facilities for cricket, kabaddi, athletics and more.</p>
+      </div>
+      <div class="facility-card" style="background:#E0F2F1;color:#00695C;">
+        <div class="icon">🌍</div>
+        <h3>Educational & Cultural Field Excursions</h3>
+        <p>Regular school trips for experiential learning beyond the classroom.</p>
+      </div>
+      <div class="facility-card" style="background:#FCE4EC;color:#C62828;">
+        <div class="icon">🎓</div>
+        <h3>Industry-Aligned Career Subjects</h3>
+        <p>NSQF certified courses in Retail & IT to prepare students for careers.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COURSES -->
+<section id="courses">
+  <div class="container">
+    <div class="section-tag" style="background:#E8F5E9;color:#2E7D32;">Academics</div>
+    <h2 class="section-title">Subjects Offered (Std 5–10)</h2>
+    <p class="section-sub">A comprehensive curriculum designed to build strong foundations and prepare students for a bright future.</p>
+    <div class="courses-grid">
+      <div class="course-card" style="background:#E3F2FD;color:#1565C0;">
+        <div class="icon">➕</div>
+        <h3>Mathematics</h3>
+        <p>Arithmetic, algebra, geometry — building logical thinking step by step.</p>
+      </div>
+      <div class="course-card" style="background:#E8F5E9;color:#2E7D32;">
+        <div class="icon">🔬</div>
+        <h3>Science</h3>
+        <p>Physics, chemistry, and biology with hands-on lab experiments and STEM projects.</p>
+      </div>
+      <div class="course-card" style="background:#FFF3E0;color:#E65100;">
+        <div class="icon">📖</div>
+        <h3>English</h3>
+        <p>Language, grammar, literature and communication skills for real-world readiness.</p>
+      </div>
+      <div class="course-card" style="background:#F3E5F5;color:#6A1B9A;">
+        <div class="icon">🌍</div>
+        <h3>Social Studies</h3>
+        <p>History, geography, civics and economics to understand India and the world.</p>
+      </div>
+      <div class="course-card" style="background:#FCE4EC;color:#C62828;">
+        <div class="icon">🕉️</div>
+        <h3>Konkani / Marathi</h3>
+        <p>Regional language studies celebrating Goa's rich linguistic and cultural heritage.</p>
+      </div>
+      <div class="course-card" style="background:#E0F2F1;color:#00695C;">
+        <div class="icon">💼</div>
+        <h3>NSQF — Retail & IT</h3>
+        <p>Industry-aligned vocational subjects for career readiness under the NSQF framework.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ADMISSIONS -->
+<section id="admissions">
+  <div class="container">
+    <div class="section-tag" style="background:rgba(249,168,37,0.2);color:#F9A825;">Admissions 2026–27</div>
+    <h2 class="section-title">Join Our School Family</h2>
+    <p class="section-sub">Admissions are open for Std 5 to 10 for the academic year 2026–2027. Free uniform, shoes, and books provided to all students.</p>
+    <div class="admission-steps">
+      <div class="step-card">
+        <div class="step-num" style="background:linear-gradient(135deg,#F9A825,#E65100);">1</div>
+        <h3>Collect Form</h3>
+        <p>Visit the school office at Borda, Margao or call us to get the admission form.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num" style="background:linear-gradient(135deg,#43A047,#2E7D32);">2</div>
+        <h3>Submit Documents</h3>
+        <p>Submit form with birth certificate, previous school report card, and passport photo.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num" style="background:linear-gradient(135deg,#AB47BC,#6A1B9A);">3</div>
+        <h3>Verification</h3>
+        <p>Documents will be verified by administration within 2–3 working days.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num" style="background:linear-gradient(135deg,#ef5350,#C62828);">4</div>
+        <h3>Enroll & Start!</h3>
+        <p>Receive your confirmation, free uniform, shoes, and books. Welcome to PM SHRI!</p>
+      </div>
+    </div>
+    <div class="nsqf-box">
+      <h3>🏅 NSQF Certified School — Retail & IT Vocational Courses</h3>
+      <p>We offer Industry-Aligned Career Subjects under NSQF (National Skills Qualifications Framework) in Retail and IT — giving our students a head start in the job market right from school.</p>
+    </div>
+    <div style="margin-top:36px;text-align:center;">
+      <a href="#contact" class="btn-primary" style="display:inline-block;">Enquire Now — 7066053226
+      </a>
+    </div>
+    <div style="margin-top:36px;text-align:center;">
+     <a href="https://maps.app.goo.gl/5fAPg5cgYbt6jYdC7" class="btn-primary" style="display:inline-block;" target="_blank" rel="noopener noreferrer">CLICK TO OPEN ON MAP </a>
+
+    </div>
+  </div>
+</section>
+
+<<!-- GALLERY -->
+<section id="gallery">
+  <div class="container">
+    <div class="section-tag" style="background:#FFF3E0;color:#E65100;">Gallery</div>
+    <h2 class="section-title">Life at Our School</h2>
+    <p class="section-sub">Browse photos by category from events and activities at PM SHRI Govt High School, Borda.</p>
+
+    <!-- FILTER BUTTONS -->
+    <div style="display:flex;flex-wrap:wrap;gap:12px;margin-bottom:36px;">
+      <button onclick="filterGallery('all')" id="btn-all"
+        style="padding:10px 22px;border-radius:30px;border:none;background:#1a1a2e;color:#fff;font-weight:700;font-size:13px;cursor:pointer;">
+        🏫 All Photos
+      </button>
+      <button onclick="filterGallery('antidrug')" id="btn-antidrug"
+        style="padding:10px 22px;border-radius:30px;border:2px solid #C62828;background:#fff;color:#C62828;font-weight:700;font-size:13px;cursor:pointer;">
+       Events
+      </button>
+      <button onclick="filterGallery('assembly')" id="btn-assembly"
+        style="padding:10px 22px;border-radius:30px;border:2px solid #1565C0;background:#fff;color:#1565C0;font-weight:700;font-size:13px;cursor:pointer;">
+        🎤 assembly
+
+      <button onclick="filterGallery('campus')" id="btn-campus"
+        style="padding:10px 22px;border-radius:30px;border:2px solid #2E7D32;background:#fff;color:#2E7D32;font-weight:700;font-size:13px;cursor:pointer;">
+        🏛️ Campus
+      </button>
+      <button onclick="filterGallery('students')" id="btn-students"
+        style="padding:10px 22px;border-radius:30px;border:2px solid #E65100;background:#fff;color:#E65100;font-weight:700;font-size:13px;cursor:pointer;">
+        🎓 Students
+      </button>
+    </div>
+
+    <!-- PHOTO GRID -->
+    <div id="galleryGrid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;">
+
+      <!-- Events -->
+      <div class="gcard" data-cat="antidrug" style="border-radius:16px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.12);background:#fff;transition:transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+        <div style="position:relative;">
+          <img src="logo.png.jpeg" alt="Students with Anti-Drug Posters" style="width:100%;height:220px;object-fit:cover;display:block;"/>
+          <span style="position:absolute;top:10px;left:10px;background:#C62828;color:#fff;font-size:11px;font-weight:700;padding:4px 12px;border-radius:20px;">🚫 Anti-Drug Campaign</span>
+        </div>
+        <div style="padding:14px 16px;">
+          <h3 style="font-family:'Poppins',sans-serif;font-size:0.95rem;font-weight:700;color:#1a1a2e;margin-bottom:6px;">Students with Anti-Drug Posters</h3>
+          <p style="font-size:0.82rem;color:#666;line-height:1.5;">Students displaying creative posters on school steps for International Day Against Drug Abuse.</p>
+        </div>
+      </div>
+
+      <div class="gcard" data-cat="antidrug" style="border-radius:16px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.12);background:#fff;transition:transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+        <div style="position:relative;">
+          <img src="WhatsApp Image 2026-06-24 at 5.00.57 PM.jpeg" alt="Anti-Drug Rally" style="width:100%;height:220px;object-fit:cover;display:block;"/>
+          <span style="position:absolute;top:10px;left:10px;background:#C62828;color:#fff;font-size:11px;font-weight:700;padding:4px 12px;border-radius:20px;">🚫 Anti-Drug Campaign</span>
+        </div>
+        <div style="padding:14px 16px;">
+          <h3 style="font-family:'Poppins',sans-serif;font-size:0.95rem;font-weight:700;color:#1a1a2e;margin-bottom:6px;">Anti-Drug Awareness Rally</h3>
+          <p style="font-size:0.82rem;color:#666;line-height:1.5;">Students marching with banners saying "Say No to Drugs" outside the school.</p>
+        </div>
+      </div>
+
+      <div class="gcard" data-cat="antidrug" style="border-radius:16px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.12);background:#fff;transition:transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+        <div style="position:relative;">
+          <img src="WhatsApp Image 2026-06-24 at 5.00.55 PM.jpeg" alt="Anti-Drug Awareness Programme" style="width:100%;height:220px;object-fit:cover;display:block;"/>
+          <span style="position:absolute;top:10px;left:10px;background:#C62828;color:#fff;font-size:11px;font-weight:700;padding:4px 12px;border-radius:20px;">🚫 Anti-Drug Campaign</span>
+        </div>
+        <div style="padding:14px 16px;">
+          <h3 style="font-family:'Poppins',sans-serif;font-size:0.95rem;font-weight:700;color:#1a1a2e;margin-bottom:6px;">Anti-Drug Awareness Programme</h3>
+          <p style="font-size:0.82rem;color:#666;line-height:1.5;">Students and police officers at the Drug Abuse awareness session inside the school hall.</p>
+        </div>
+      </div>
+
+      <!-- Assemble  -->
+      <div class="gcard" data-cat="assembly" style="border-radius:16px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.12);background:#fff;transition:transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+        <div style="position:relative;">
+          <img src="WhatsApp Image 2026-06-24 at 5.00.57 PM (1).jpeg" alt="School Assembly Hall" style="width:100%;height:220px;object-fit:cover;display:block;"/>
+          <span style="position:absolute;top:10px;left:10px;background:#1565C0;color:#fff;font-size:11px;font-weight:700;padding:4px 12px;border-radius:20px;">🎤 Assembly & Events</span>
+        </div>
+        <div style="padding:14px 16px;">
+          <h3 style="font-family:'Poppins',sans-serif;font-size:0.95rem;font-weight:700;color:#1a1a2e;margin-bottom:6px;">Full School Assembly</h3>
+          <p style="font-size:0.82rem;color:#666;line-height:1.5;">All students gathered in the spacious assembly hall for the awareness seminar.</p>
+        </div>
+      </div>
+
+      <!-- Students -->
+      <div class="gcard" data-cat="students" style="border-radius:16px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.12);background:#fff;transition:transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+        <div style="position:relative;">
+          <img src="" alt="Student Felicitation" style="width:100%;height:220px;object-fit:cover;display:block;"/>
+          <span style="position:absolute;top:10px;left:10px;background:#E65100;color:#fff;font-size:11px;font-weight:700;padding:4px 12px;border-radius:20px;">🎓 Students</span>
+        </div>
+        <div style="padding:14px 16px;">
+          <h3 style="font-family:'Poppins',sans-serif;font-size:0.95rem;font-weight:700;color:#1a1a2e;margin-bottom:6px;">Student Felicitation</h3>
+          <p style="font-size:0.82rem;color:#666;line-height:1.5;">A student receiving recognition and a bouquet from a police officer at the school event.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    function filterGallery(cat) {
+      const cards = document.querySelectorAll('.gcard');
+      cards.forEach(c => {
+        c.style.display = (cat === 'all' || c.dataset.cat === cat) ? 'block' : 'none';
+      });
+      // Reset all buttons
+      ['all','antidrug','assembly','campus','students'].forEach(id => {
+        const btn = document.getElementById('btn-' + id);
+        if (!btn) return;
+        btn.style.background = '#fff';
+        btn.style.color = btn.style.borderColor || '#333';
+        btn.style.border = '2px solid ' + (btn.style.borderColor || '#333');
+      });
+      // Highlight active
+      const active = document.getElementById('btn-' + cat);
+      if (active) {
+        active.style.background = '#1a1a2e';
+        active.style.color = '#fff';
+      }
+    }
+  </script>
+</section>
+
+<!-- EVENTS -->
+<section id="events">
+  <div class="container">
+    <div class="section-tag" style="background:#E8F5E9;color:#2E7D32;">Events</div>
+    <h2 class="section-title">School Events Calendar 2026–27</h2>
+    <p class="section-sub">Full yearly calendar of events, activities, and celebrations at PM SHRI Govt Multipurpose High School, Borda.</p>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;">
+
+      <!-- JUNE -->
+      <div style="background:#E3F2FD;border-radius:16px;padding:24px;border-left:5px solid #1565C0;">
+        <h3 style="font-family:'Poppins',sans-serif;color:#1565C0;margin-bottom:14px;">🌿 June</h3>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;">
+          <li style="display:flex;gap:10px;"><span style="background:#1565C0;color:#fff;border-radius:8px;padding:2px 8px;font-size:11px;font-weight:700;">05 Jun</span><span>World Environment Day</span></li>
+          <li style="display:flex;gap:10px;"><span style="background:#1565C0;color:#fff;border-radius:8px;padding:2px 8px;font-size:11px;font-weight:700;">21 Jun</span><span>International Yoga Day</span></li>
+          <li style="display:flex;gap:10px;"><span style="background:#1565C0;color:#fff;border-radius:8px;padding:2px 8px;font-size:11px;font-weight:700;">Jun</span><span>School Reopening Orientation Programme</span></li>
+        </ul>
+      </div>
+
+      <!-- JULY -->
+      <div style="background:#E8F5E9;border-radius:16px;padding:24px;border-left:5px solid #2E7D32;">
+        <h3 style="font-family:'Poppins',sans-serif;color:#2E7D32;margin-bottom:14px;">🌳 July</h3>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;">
+          <li style="display:flex;gap:10px;"><span style="background:#2E7D32;color:#fff;border-radius:8px;padding:2px 8px;font-size:11px;font-weight:700;">15 Jul</span><span>Youth Skill Day</span></li>
+          <li style="display:flex;gap:10px;"><span style="background:#2E7D32;color:#fff;border-radius:8px;padding:2px 8px;font-size:11px;font-weight:700;">11 Jul</span><span>World Population Day</span></li>
+          <li style="display:flex;gap:10px;"><span style="background:#2E7D32;color:#fff;border-radius:8px;padding:2px 8px;font-size:11px;font-weight:700;">Jul</span><span>Van Mahotsav Week</span></li>
+          <li style="display:flex;gap:10px;"><span style="background:#2E7D32;color:#fff;border-radius:8px;padding:2px 8px;font-size:11px;font-weight:700;">Jul</span><span>Tree Plantation Drive</span></li>
+        </ul>
+      </div>
+
+      <!-- AUGUST -->
+      <div style="background:#FFF3E0;border-radius:16px;padding:24px;border-left:5px solid #E65100;">
+        <h3 style="font-family:'Poppins',sans-serif;color:#E65100;margin-bottom:14px;">August</h3>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;">
+          <li style="display:flex;gap:10px;"><span style="background:#E65100;color:#fff;border-radius:8px;padding:2px 8px;font-size:11px;font-weight:700;">09 Aug</span><span>Quit India Day</span></li>
+          <li style="display:flex;gap:10px;"><span style="background:#E65100;color:#fff;border-radius:8px;padding:2px 8px;font-size:11px;font-weight:700;">15 Aug</span><span>Independence Day — Flag hoisting & cultural programme</span></li>
+          <li style="display:flex;gap:10px;"><span style="background:#E65100;color:#fff;border-radius:8px;padding:2px 8px;font-size:11px;font-weight:700;">29 Aug</span><span>National Sports Day</span></li>
+        </ul>
+      </div>
+
+      <!-- SEPTEMBER -->
+      <div style="background:#F3E5F5;border-radius:16px;padding:24px;border-left:5px solid #6A1B9A;">
+        <h3 style="font-family:'Poppins',sans-serif;color:#6A1B9A;margin-bottom:14px;">📚 September</h3>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;">
+          <li style="display:flex;gap:10px;"><span style="background:#6A1B9A;color:#fff;border-radius:8px;padding:2px 8px;font-size:11px;font-weight:700;">05 Sep</span><span>Teachers' Day</span></li>
+          <li style="display:flex;gap:10px;"><span style="background:#6A1B9A;color:#fff;border-radius:8px;padding:2px 8px;font-size:11px;font-weight:700;">08 Sep</span><span>International Literacy Day</span></li>
+          <li style="display:flex;gap:10px;"><span style="background:#6A1B9A;color:#fff;border-radius:8px;padding:2px 8px;font-size:11px;font-weight:700;">14 Sep</span><span>Hindi Diwas</span></li>
+          <li style="display:flex;gap:10px;"><span style="background:#6A1B9A;color:#fff;border-radius:8px;padding:2px 8px;font-size:11px;font-weight:700;">Sep</span><span>NSS / Social Service Activities</span></li>
+        </ul>
+      </div>
+
+      <!-- OCTOBER -->
+      <div style="background:#E0F2F1;border-radius:16px;padding:24px;border-left:5px solid #00695C;">
+        <h3 style="font-family:'Poppins',sans-serif;color:#00695C;margin-bottom:14px;">🌍 October</h3>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;">
+          <li style="display:flex;gap:10px;"><span style="background:#00695C;color:#fff;border-radius:8px;padding:2px 8px;font-size:11px;font-weight:700;">02 Oct</span><span>Gandhi Jayanti</span></li>
+          <li style="display:flex;gap:10px;"><span style="background:#00695C;color:#fff;border-radius:8px;padding:2px 8px;font-size:11px;font-weight:700;">Oct</span><span>Wildlife Week / Nature Awareness</span></li>
+          <li style="display:flex;gap:10px;"><span style="background:#00695C;color:#fff;border-radius:8px;padding:2px 8px;font-size:11px;font-weight:700;">31 Oct</span><span>National Unity Day</span></li>
+        </ul>
+      </div>
+
+      <!-- NOVEMBER -->
+      <div style="background:#FCE4EC;border-radius:16px;padding:24px;border-left:5px solid #C62828;">
+        <h3 style="font-family:'Poppins',sans-serif;color:#C62828;margin-bottom:14px;">🧒 November</h3>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;">
+          <li style="display:flex;gap:10px;"><span style="background:#C62828;color:#fff;border-radius:8px;padding:2px 8px;font-size:11px;font-weight:700;">14 Nov</span><span>Children's Day</span></li>
+          <li style="display:flex;gap:10px;"><span style="background:#C62828;color:#fff;border-radius:8px;padding:2px 8px;font-size:11px;font-weight:700;">26 Nov</span><span>Constitution Day</span></li>
+          <li style="display:flex;gap:10px;"><span style="background:#C62828;color:#fff;border-radius:8px;padding:2px 8px;font-size:11px;font-weight:700;">Nov</span><span>Science Activities / Quiz</span></li>
+        </ul>
+      </div>
+
+      <!-- DECEMBER -->
+      <div style="background:#E3F2FD;border-radius:16px;padding:24px;border-left:5px solid #1565C0;">
+        <h3 style="font-family:'Poppins',sans-serif;color:#1565C0;margin-bottom:14px;">🎄 December</h3>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;">
+          <li style="display:flex;gap:10px;"><span style="background:#1565C0;color:#fff;border-radius:8px;padding:2px 8px;font-size:11px;font-weight:700;">01 Dec</span><span>World AIDS Day</span></li>
+          <li style="display:flex;gap:10px;"><span style="background:#1565C0;color:#fff;border-radius:8px;padding:2px 8px;font-size:11px;font-weight:700;">10 Dec</span><span>Human Rights Day</span></li>
+          <li style="display:flex;gap:10px;"><span style="background:#1565C0;color:#fff;border-radius:8px;padding:2px 8px;font-size:11px;font-weight:700;">Dec</span><span>Christmas Celebration</span></li>
+        </ul>
+      </div>
+
+      <!-- JANUARY -->
+      <div style="background:#E8F5E9;border-radius:16px;padding:24px;border-left:5px solid #2E7D32;">
+        <h3 style="font-family:'Poppins',sans-serif;color:#2E7D32;margin-bottom:14px;">🎉 January</h3>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;">
+          <li style="display:flex;gap:10px;"><span style="background:#2E7D32;color:#fff;border-radius:8px;padding:2px 8px;font-size:11px;font-weight:700;">12 Jan</span><span>National Youth Day</span></li>
+          <li style="display:flex;gap:10px;"><span style="background:#2E7D32;color:#fff;border-radius:8px;padding:2px 8px;font-size:11px;font-weight:700;">26 Jan</span><span>Republic Day</span></li>
+          <li style="display:flex;gap:10px;"><span style="background:#2E7D32;color:#fff;border-radius:8px;padding:2px 8px;font-size:11px;font-weight:700;">Jan</span><span>Road Safety Awareness Programme</span></li>
+        </ul>
+      </div>
+
+      <!-- FEBRUARY -->
+      <div style="background:#FFF3E0;border-radius:16px;padding:24px;border-left:5px solid #E65100;">
+        <h3 style="font-family:'Poppins',sans-serif;color:#E65100;margin-bottom:14px;">🔬 February</h3>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;">
+          <li style="display:flex;gap:10px;"><span style="background:#E65100;color:#fff;border-radius:8px;padding:2px 8px;font-size:11px;font-weight:700;">19 Feb</span><span>Shivaji Maharaj Jayanti</span></li>
+          <li style="display:flex;gap:10px;"><span style="background:#E65100;color:#fff;border-radius:8px;padding:2px 8px;font-size:11px;font-weight:700;">28 Feb</span><span>National Science Day</span></li>
+          <li style="display:flex;gap:10px;"><span style="background:#E65100;color:#fff;border-radius:8px;padding:2px 8px;font-size:11px;font-weight:700;">Feb</span><span>Debate / Science Exhibition</span></li>
+        </ul>
+      </div>
+
+      <!-- MARCH -->
+      <div style="background:#F3E5F5;border-radius:16px;padding:24px;border-left:5px solid #6A1B9A;">
+        <h3 style="font-family:'Poppins',sans-serif;color:#6A1B9A;margin-bottom:14px;">📝 March</h3>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;">
+          <li style="display:flex;gap:10px;"><span style="background:#6A1B9A;color:#fff;border-radius:8px;padding:2px 8px;font-size:11px;font-weight:700;">08 Mar</span><span>International Women's Day</span></li>
+          <li style="display:flex;gap:10px;"><span style="background:#6A1B9A;color:#fff;border-radius:8px;padding:2px 8px;font-size:11px;font-weight:700;">Mar</span><span>Academic Review & Preparation for Exams</span></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="section-tag" style="background:rgba(249,168,37,0.2);color:#F9A825;">Get In Touch</div>
+    <h2 class="section-title">Contact Us</h2>
+    <p class="section-sub">Have questions about admissions or our programmes? We'd love to hear from you.</p>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="contact-icon" style="background:rgba(21,101,192,0.2);">📍</div>
+          <div>
+            <h4>Address</h4>
+            <p>PM SHRI Govt Multipurpose High School,<br>Borda, Margao, Goa, India</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon" style="background:rgba(46,125,50,0.2);">📞</div>
+          <div>
+            <h4>Phone Numbers</h4>
+            <p>7066053226<br>99228 02140<br>87665 02842</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon" style="background:rgba(106,27,154,0.2);">👩‍💼</div>
+          <div>
+            <h4>Head Mistress</h4>
+            <p>Mrs. Sonam Naik</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon" style="background:rgba(249,168,37,0.2);">🕐</div>
+          <div>
+            <h4>School Hours</h4>
+            <p>Monday – Saturday<br>7:30 AM – 2:30 PM</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon" style="background:rgba(198,40,40,0.2);">🎒</div>
+          <div>
+            <h4>Admissions</h4>
+            <p>Open for 2026–2027<br>Standards 5 to 10<br>Free Uniform · Free Shoes · Free Books</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div style="margin-top:36px;text-align:center;">
+     <a href="https://maps.app.goo.gl/5fAPg5cgYbt6jYdC7" class="btn-primary" style="display:inline-block;" target="_blank" rel="noopener noreferrer">CLICK TO OPEN ON MAP </a>
+
+    </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 <span>PM SHRI Govt Multipurpose High School, Borda, Margao, Goa</span></p>
+  <p class="footer-phones">📞 7066053226 &nbsp;|&nbsp; 99228 02140 &nbsp;|&nbsp; 87665 02842</p>
+  <p style="margin-top:8px;">Government of Goa &nbsp;·&nbsp; PM SHRI Scheme — Government of India &nbsp;·&nbsp; Made with ❤️ for quality education</p>
+</footer>
+
+</body>
+</html>
